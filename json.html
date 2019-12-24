@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="div">
+    <ul></ul>
+</div>
+<script>
+    $.getJSON('test.json', function(data) {
+        alert(data.name);
+    });
+
+
+// for (var i in data.items) {
+//     list += '<li>' + i + ': ' + data.items[i] + ' шт. </li>';
+// }
+// alert(data.name);
+// document.getElementById('div').innerHTML += header;
+// document.getElementById('div').innerHTML += '<ul>' + list + '</ul>';
+</script>
+</body>
+</html>
